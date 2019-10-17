@@ -1,4 +1,4 @@
-# activities-fe
+# vue-mode-common
 
 ## Project setup
 ```
