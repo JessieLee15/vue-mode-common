@@ -1,5 +1,13 @@
 # vue-mode-common
 
+一个vue项目架子demo
+* 管理工具：vue-cli 4.0
+* 技术栈：
+  * vue全家桶（vue vue-router ）
+  * axios
+  * SPA
+  * element-ui（按需引入）
+
 ## Project setup
 ```
 npm install

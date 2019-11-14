@@ -8,15 +8,22 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [{
       path: '/',
-      redirect: '/yqd'
+      redirect: '/demo'
     },
     {
-      path: '/yqd',
-      component: resolve => require(['@/components/page/Statistic.vue'], resolve),
+      path: '/demo',
+      component: resolve => require(['@/components/page/Demo.vue'], resolve),
       meta: {
-        title: '实时战况 - 洋桥店',
+        title: '自娱自乐',
       },
-      children: []
-    },
+      children: [{
+        path: '/alignment',
+        component: resolve => require(['@/components/page/Alignment.vue'], resolve),
+        meta: {
+          title: '实时战况 - 洋桥店',
+        },
+        children: []
+      }]
+    }
   ]
 })
