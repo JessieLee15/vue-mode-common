@@ -20,7 +20,7 @@ export default new Router({
         path: '/alignment',
         component: resolve => require(['@/components/page/Alignment.vue'], resolve),
         meta: {
-          title: '实时战况 - 洋桥店',
+          title: 'CSS对齐',
         },
         children: []
       }]

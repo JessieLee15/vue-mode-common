@@ -279,11 +279,11 @@
       right: 0;
       border-radius: 50%; }
     .el-badge__content--primary {
-      background-color: #409EFF; }
+      background-color: #0E4749; }
     .el-badge__content--success {
-      background-color: #67C23A; }
+      background-color: #95C623; }
     .el-badge__content--warning {
-      background-color: #E6A23C; }
+      background-color: #E55812; }
     .el-badge__content--info {
       background-color: #909399; }
     .el-badge__content--danger {

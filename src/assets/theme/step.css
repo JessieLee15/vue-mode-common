@@ -268,20 +268,20 @@
     position: relative;
     width: 100%; }
     .el-step__head.is-process {
-      color: #303133;
-      border-color: #303133; }
+      color: #002323;
+      border-color: #002323; }
     .el-step__head.is-wait {
-      color: #C0C4CC;
-      border-color: #C0C4CC; }
+      color: #A2ACAC;
+      border-color: #A2ACAC; }
     .el-step__head.is-success {
-      color: #67C23A;
-      border-color: #67C23A; }
+      color: #95C623;
+      border-color: #95C623; }
     .el-step__head.is-error {
       color: #F56C6C;
       border-color: #F56C6C; }
     .el-step__head.is-finish {
-      color: #409EFF;
-      border-color: #409EFF; }
+      color: #0E4749;
+      border-color: #0E4749; }
   .el-step__icon {
     position: relative;
     z-index: 1;
@@ -327,7 +327,7 @@
   .el-step__line {
     position: absolute;
     border-color: inherit;
-    background-color: #C0C4CC; }
+    background-color: #A2ACAC; }
   .el-step__line-inner {
     display: block;
     border-width: 1px;
@@ -347,15 +347,15 @@
     line-height: 38px; }
     .el-step__title.is-process {
       font-weight: bold;
-      color: #303133; }
+      color: #002323; }
     .el-step__title.is-wait {
-      color: #C0C4CC; }
+      color: #A2ACAC; }
     .el-step__title.is-success {
-      color: #67C23A; }
+      color: #95C623; }
     .el-step__title.is-error {
       color: #F56C6C; }
     .el-step__title.is-finish {
-      color: #409EFF; }
+      color: #0E4749; }
   .el-step__description {
     padding-right: 10%;
     margin-top: -5px;
@@ -363,15 +363,15 @@
     line-height: 20px;
     font-weight: normal; }
     .el-step__description.is-process {
-      color: #303133; }
+      color: #002323; }
     .el-step__description.is-wait {
-      color: #C0C4CC; }
+      color: #A2ACAC; }
     .el-step__description.is-success {
-      color: #67C23A; }
+      color: #95C623; }
     .el-step__description.is-error {
       color: #F56C6C; }
     .el-step__description.is-finish {
-      color: #409EFF; }
+      color: #0E4749; }
   .el-step.is-horizontal {
     display: inline-block; }
     .el-step.is-horizontal .el-step__line {
@@ -470,7 +470,7 @@
         position: absolute;
         height: 15px;
         width: 1px;
-        background: #C0C4CC; }
+        background: #A2ACAC; }
       .el-step.is-simple .el-step__arrow::before {
         -webkit-transform: rotate(-45deg) translateY(-4px);
         transform: rotate(-45deg) translateY(-4px);

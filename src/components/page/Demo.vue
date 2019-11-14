@@ -1,14 +1,29 @@
 <template>
   <div class="page-demo">
-    <h1>演示页面</h1>
+    <h1 @click="drawer = true">演示页面</h1>
+    <el-drawer title="菜单" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
+      <div class="menu-wrap">
+        <router-link to="/alignment">CSS对齐</router-link>
+        <router-link to="/alignment1">待开发</router-link>
+      </div>
+    </el-drawer>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
   export default {
     name: 'DemoHome',
-    props: {
-      msg: String
+    data() {
+      return {
+        drawer: false,
+        direction: 'rtl',
+      }
+    },
+    methods: {
+      handleClose(done) {
+        done();
+      }
     }
   }
 </script>
@@ -18,5 +33,16 @@
   h1 {
     background-color: #42b983;
     margin: 0;
+  }
+
+  .menu-wrap {
+    margin: 0 15px;
+    a {
+      display: block;
+
+      &.router-link-active{
+        
+      }
+    }
   }
 </style>

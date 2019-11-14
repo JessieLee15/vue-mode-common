@@ -255,19 +255,19 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #606266;
+  color: #002626;
   height: 34px;
   line-height: 34px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer; }
   .el-select-dropdown__item.is-disabled {
-    color: #C0C4CC;
+    color: #A2ACAC;
     cursor: not-allowed; }
     .el-select-dropdown__item.is-disabled:hover {
       background-color: #FFFFFF; }
   .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-    background-color: #F5F7FA; }
+    background-color: #EFE7DA; }
   .el-select-dropdown__item.selected {
-    color: #409EFF;
+    color: #0E4749;
     font-weight: bold; }

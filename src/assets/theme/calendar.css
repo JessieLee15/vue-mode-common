@@ -271,11 +271,11 @@
   width: 100%; }
   .el-calendar-table thead th {
     padding: 12px 0;
-    color: #606266;
+    color: #002626;
     font-weight: normal; }
   .el-calendar-table:not(.is-range) td.prev,
   .el-calendar-table:not(.is-range) td.next {
-    color: #C0C4CC; }
+    color: #A2ACAC; }
   .el-calendar-table td {
     border-bottom: 1px solid #EBEEF5;
     border-right: 1px solid #EBEEF5;
@@ -285,7 +285,7 @@
     .el-calendar-table td.is-selected {
       background-color: #F2F8FE; }
     .el-calendar-table td.is-today {
-      color: #409EFF; }
+      color: #0E4749; }
   .el-calendar-table tr:first-child td {
     border-top: 1px solid #EBEEF5; }
   .el-calendar-table tr td:first-child {

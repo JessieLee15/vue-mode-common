@@ -268,7 +268,7 @@
   -webkit-transition: opacity .2s;
   transition: opacity .2s; }
   .el-alert.is-light .el-alert__closebtn {
-    color: #C0C4CC; }
+    color: #A2ACAC; }
   .el-alert.is-dark .el-alert__closebtn {
     color: #FFFFFF; }
   .el-alert.is-dark .el-alert__description {
@@ -278,12 +278,12 @@
     -ms-flex-pack: center;
     justify-content: center; }
   .el-alert--success.is-light {
-    background-color: #f0f9eb;
-    color: #67C23A; }
+    background-color: #f4f9e9;
+    color: #95C623; }
     .el-alert--success.is-light .el-alert__description {
-      color: #67C23A; }
+      color: #95C623; }
   .el-alert--success.is-dark {
-    background-color: #67C23A;
+    background-color: #95C623;
     color: #FFFFFF; }
   .el-alert--info.is-light {
     background-color: #f4f4f5;
@@ -294,12 +294,12 @@
   .el-alert--info .el-alert__description {
     color: #909399; }
   .el-alert--warning.is-light {
-    background-color: #fdf6ec;
-    color: #E6A23C; }
+    background-color: #fceee7;
+    color: #E55812; }
     .el-alert--warning.is-light .el-alert__description {
-      color: #E6A23C; }
+      color: #E55812; }
   .el-alert--warning.is-dark {
-    background-color: #E6A23C;
+    background-color: #E55812;
     color: #FFFFFF; }
   .el-alert--error.is-light {
     background-color: #fef0f0;

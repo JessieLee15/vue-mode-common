@@ -127,15 +127,15 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #409EFF;
+  color: #0E4749;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #66b1ff; }
+    color: #3e6c6d; }
   a:active {
-    color: #3a8ee6; }
+    color: #0d4042; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #606266;
+  color: #002626;
   font-weight: inherit; }
   h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0; }
