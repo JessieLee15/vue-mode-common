@@ -11,7 +11,6 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
 }
 
 html,
@@ -28,9 +27,23 @@ body,
 
 body {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    background-color: @color-egg;
 }
 
 a {
     text-decoration: none;
     color: #AEAEAE;
+}
+
+// 清除浮动
+.clearfloat {
+    zoom: 1;
+    &:after, &:after {
+        display: block;
+        content: '';
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
+        clear: both;
+    }
 }

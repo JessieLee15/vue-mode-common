@@ -30,18 +30,20 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
+  @import "../../style/variable.less";
   h1 {
-    background-color: #42b983;
+    background-color: @color-dark-green;
     margin: 0;
+    padding: 10px 0;
+    color: @text-color-light;
+    text-align: center;
   }
 
   .menu-wrap {
     margin: 0 15px;
     a {
       display: block;
-
       &.router-link-active{
-        
       }
     }
   }
