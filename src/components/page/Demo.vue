@@ -1,6 +1,7 @@
 <template>
   <div class="page-demo">
     <h1 @click="drawer = true">演示页面</h1>
+    <p>来自node服务的数据：{{dataNodeApi}}</p>
     <el-drawer title="菜单" :visible.sync="drawer" :direction="direction" :before-close="handleClose">
       <div class="menu-wrap">
         <router-link to="/alignment">CSS对齐</router-link>
@@ -12,13 +13,21 @@
 </template>
 
 <script>
+   import { testNode} from "@/service/test.js";
+
   export default {
     name: 'DemoHome',
     data() {
       return {
         drawer: false,
         direction: 'rtl',
+        dataNodeApi: ''
       }
+    },
+    mounted() {
+      testNode().then((res)=>{
+        this.dataNodeApi = res.content;
+      })
     },
     methods: {
       handleClose(done) {

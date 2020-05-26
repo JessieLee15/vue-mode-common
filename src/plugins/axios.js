@@ -10,8 +10,8 @@ import QS from 'qs';
  * 通用拦截说明：
  *  1. request异常： 直接抛出reject，参数为整个http response
  *  2. response异常： 
- *    1. code异常：关闭全局fsLoading； 错误提示response.msg || '请求错误！请稍后重试'； 抛出reject，参数为整个http response
- *    2. ret异常：闭全局fsLoading；
+ *    1. code异常：错误提示response.msg || '请求错误！请稍后重试'； 抛出reject，参数为整个http response
+ *    2. ret异常：
  *      1. [50001, 100021]： alert提示response.data.msg || '登陆超时！请重新登陆'； 跳转登陆页面； cookie删除：zone_id； 抛出reject，参数为整个response.data
  *      2. -20000000: confirm:response.data.msg || "为了您的账号安全，请及时修改密码";  抛出reject，参数为整个response.data
  *      3. 其他非0: 错误提示response.data.msg ;  抛出reject，参数为整个response.data
@@ -56,7 +56,6 @@ axios.interceptors.response.use(response => {
     }, 0);
     return Promise.resolve(response.data);
   } else if (response.data.ret === -20000000) { //提示修改密码
-    vm.$store.state.fsLoading && vm.$store.state.fsLoading.close();
     Vue.prototype.$confirm(response.data.msg || "为了您的账号安全，请及时修改密码", {
       callback: (action) => {
         if (action == 'confirm') {
@@ -70,7 +69,6 @@ axios.interceptors.response.use(response => {
       }
     });
   } else {
-    vm.$store.state.fsLoading && vm.$store.state.fsLoading.close();
     setTimeout(() => {
       Vue.prototype.$message.error(response.data.msg || '网络错误');
     }, 0);
@@ -79,7 +77,6 @@ axios.interceptors.response.use(response => {
 }, err => {
   //统一处理 http错误
   setTimeout(() => {
-    vm.$store.state.fsLoading && vm.$store.state.fsLoading.close();
     Vue.prototype.$message.error(err.msg || '请求错误！请稍后重试');
   }, 0);
   return Promise.resolve(err)

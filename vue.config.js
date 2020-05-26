@@ -4,7 +4,7 @@ module.exports = {
   // 基本路径
   publicPath: './',
   // 输 出文件目录
-  outputDir: 'dist',
+  outputDir: '../../../../code_node/FeSaasService/static/common',
   assetsDir: 'static',
   // eslint-loader 是否在保存的时候检查
   lintOnSave: false,
